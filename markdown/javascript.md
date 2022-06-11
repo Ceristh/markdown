@@ -1,0 +1,6 @@
+# JavaScript
+
+**Mensaje en consola**  
+~~~
+
+~~~
