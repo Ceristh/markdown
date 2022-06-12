@@ -19,4 +19,5 @@ git push
 **Crear archivo:**  
 ~~~
 echo > "script.js"
+echo > "file.txt"
 ~~~
