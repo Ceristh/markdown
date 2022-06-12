@@ -1,7 +1,8 @@
 # GitHub
 
 **Terminal**  
-[My_Github](https://github.com/Ceristh/markdown) 
+[My_Github](https://github.com/Ceristh/markdown)  
+
 ## clonar repositorio.  
 ~~~
 git clone https://github.com/Ceristh/markdown.git
@@ -32,3 +33,27 @@ git push
 >git fetch es el comando que hace que tu repositorio Git local se actualice con la última información que hay en el repositorio remoto, pero no hace ninguna transferencia de archivos a tu espacio de trabajo local (el código que ves en tu editor por ejemplo). Podría decirse que sirve para comprobar si hay algún cambio y traerlo a tu repositorio local.  
 
 >git pull es el comando que comprueba si hay cambios en el repositorio remoto y, en caso de que los haya, se trae esos archivos a tu repositorio local y actualiza tu espacio de trabajo (tu IDE, tus archivos).  
+
+## Comandos ocupados frecuentemente   
+~~~
+git init -b main
+git add . && git commit -m "initial commit"
+git remote add origin https://github.com/Ceristh/markdown.git
+git push -u origin main
+~~~
+~~~
+echo "# markdown" >> README.md
+git init
+git add .
+git add README.md
+git commit -am "README.md: actualizado"
+git log
+git branch -m main
+git remote add origin https://github.com/Ceristh/markdown.git
+git remote set-url origin https://github.com/Ceristh/markdown.git
+git pull --rebase origin main
+git push -u origin main
+
+**--rebase:** Si extrae cambios remotos con la bandera --rebase, sus cambios locales se vuelven a aplicar sobre los cambios remotos. (rebasing=rebasando)
+**--merge:** Si extrae cambios remotos con la bandera --merge, que también es la predeterminada, sus cambios locales se fusionan con los cambios remotos. Esto da como resultado una confirmación de combinación que apunta a la última confirmación local y la última confirmación remota. (merging=fusionan)
+~~~

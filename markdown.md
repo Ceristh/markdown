@@ -1,4 +1,82 @@
-# JavaScript
+# Notas
+[markdown](https://joedicastro.com/pages/markdown.html)
+
+GitHub curso udemy push [^fernando_herrera] y documentacion de github [^skills_github]
+
+### Indice
++ [Terminal](#Terminal)  
++ [GitHub](#GitHub)  
++ [HTML](#HTML)  
++ [JQuery](#JQuery)  
++ [JavaScript](#JavaScript)  
++ [Links](#Links)  
+
+## Terminal    
+
+**comandos ocupados frecuentemente:** 
+~~~ 
+cd assets
+mkdir css img js
+cd ..
+~~~
+
+## GitHub    
+
+**comandos ocupados frecuentemente:**  
+*repositorio nuevo: "markdown"
+~~~
+git init -b main
+git add . && git commit -m "initial commit"
+git remote add origin https://github.com/Ceristh/markdown.git
+git push -u origin main
+~~~
+~~~
+echo "# markdown" >> README.md
+git init
+git add .
+git add README.md
+git commit -am "README.md: actualizado"
+git log
+git branch -m main
+git remote add origin https://github.com/Ceristh/markdown.git
+git remote set-url origin https://github.com/Ceristh/markdown.git
+git pull --rebase origin main
+git push -u origin main
+
+**--rebase:** Si extrae cambios remotos con la bandera --rebase, sus cambios locales se vuelven a aplicar sobre los cambios remotos. (rebasing=rebasando)
+**--merge:** Si extrae cambios remotos con la bandera --merge, que también es la predeterminada, sus cambios locales se fusionan con los cambios remotos. Esto da como resultado una confirmación de combinación que apunta a la última confirmación local y la última confirmación remota. (merging=fusionan)
+~~~
+
+## HTML  
+
+~~~
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th width="33%">RUT</th>
+            <th width="33%">Nombre</th>
+            <th width="33%">Correo Electrónico</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td id="rut">rut</td>
+            <td id="nombre">nombre</td>
+            <td id="email">email</td>
+        </tr>
+    </tbody>
+</table>
+~~~
+
+## JQuery  
+
+**Mensaje en consola**  
+~~~
+
+~~~
+
+## JavaScript  
 
 **Mensaje en consola**  
 ~~~
@@ -73,3 +151,10 @@ document.getElementById('cuerpo-tabla').innerHTML += `
 document.write('El nombre del usuario es ' + nombre);
 document.write("<br><strong>"+ n1 + " + " + n2 +" = </strong>"+ suma);
 ~~~
+
+## Links  
++ [Volver al inicio](#Notas)  
+
+
+[^fernando_herrera]: https://www.udemy.com/course/git-github/learn/lecture/7380934#overview  
+[^skills_github]: https://skills.github.com/   
