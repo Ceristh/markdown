@@ -7,7 +7,7 @@ $(function () {
 });
 ~~~
 
-**jQuery Métodos**  
+**jQuery Métodos hover**  
 >El .hover() método vincula los controladores para los eventos mouseentery mouseleave. Puede usarlo para simplemente aplicar comportamiento a un elemento durante el tiempo que el mouse está dentro del elemento.   
 
 ~~~
@@ -25,7 +25,7 @@ $(function () {
 });
 ~~~
 
-**jQuery Métodos**  
+**jQuery Métodos addClass-removeClass-hasClass**  
 >El método addClass() agrega uno o más nombres de clase a los elementos seleccionados.
 Este método no elimina los atributos de clase existentes, solo agrega uno o más nombres de clase al atributo de clase.  
 
@@ -49,7 +49,7 @@ $(function () {
 });
 ~~~
 
-**jQuery Métodos**  
+**jQuery Métodos append-html-animate**  
 >El método append() inserta contenido específico al final de los elementos seleccionados.   
 
 >El método html() establece o devuelve el contenido (innerHTML) de los elementos seleccionados.  
@@ -74,4 +74,34 @@ $(function () {
         $("#inicio h1").animate({ 'height': 'toggle' }, 'slow');
     })
 });
+~~~
+
+**jQuery Métodos attr**  
+>El método attr() establece o devuelve atributos y valores de los elementos seleccionados.  
+Cuando se usa este método para devolver el valor del atributo, devuelve el valor del PRIMER elemento coincidente.  
+Cuando se utiliza este método para establecer valores de atributo, establece uno o más pares de atributo/valor para el conjunto de elementos coincidentes.  
+
++ js
+~~~
+$("#selector-clases button, #selector-clases .btn").click(function(){
+    var fondo = $(this).data('fondo');
+    
+    $("#cambio-color").attr('class', 'mt-4');
+	$("#cambio-color").addClass(fondo);
+});
+~~~
++ HTML
+~~~
+<section id="selector-clases" class="container">
+		<h2 class="mt-5" data-fondo="bg-primary">Selector por clases</h2>
+
+		<button type="button" class="btn btn-success" data-fondo="bg-success" data-nombre="Primero">Success</button>
+		<button type="button" class="btn btn-primary" data-fondo="bg-primary" data-nombre="Segundo">Primary</button>
+		<button type="button" class="btn btn-info" data-fondo="bg-info" data-nombre="Tercero">Info</button>
+
+		<div id="cambio-color" class="mt-4 p-2">
+			<h4>Cambio de color</h4>
+		</div>
+
+</section>
 ~~~
