@@ -8,6 +8,24 @@ $(function () {
 ~~~
 
 **jQuery Métodos**  
+>El .hover() método vincula los controladores para los eventos mouseentery mouseleave. Puede usarlo para simplemente aplicar comportamiento a un elemento durante el tiempo que el mouse está dentro del elemento.   
+
+~~~
+$(function () {
+    $("#mostrar-ocultar").hover(
+		//Primer función se dispara cuando el mouse se posiciona en el elemento
+		function(){
+			$("#contenedor-imagen").css({ 'display':'block'})
+		},
+		//Segunda función se dispara cuando el mouse se retira del elemento
+		function(){
+			$("#contenedor-imagen").css('display','none')
+		}
+	);
+});
+~~~
+
+**jQuery Métodos**  
 >El método addClass() agrega uno o más nombres de clase a los elementos seleccionados.
 Este método no elimina los atributos de clase existentes, solo agrega uno o más nombres de clase al atributo de clase.  
 
