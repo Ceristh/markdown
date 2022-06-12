@@ -1,6 +1,0 @@
-# GitHub
-
-**Mensaje en consola**  
-~~~
-
-~~~
