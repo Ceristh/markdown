@@ -8,6 +8,20 @@
 git clone https://github.com/Ceristh/markdown.git
 ~~~
 
+## comandos frecuentes.  
+~~~
+git --version
+git config --list
+git config --global user.name "ceristh"
+git status
+git log
+git reset HEAD
+git diff
+git checkout (bracnh=rama)
+git checkout master
+git checkout main
+~~~
+
 ## Primero crear repositorio en github.  
 ~~~
 git init -b main
