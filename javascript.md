@@ -76,7 +76,7 @@ document.write("<br><strong>"+ n1 + " + " + n2 +" = </strong>"+ suma);
 ## Ciclo for
 **ejemplo**  
 ~~~
-for( i = 1; i <= 100; i++ ){
+for( i = 1; i <= 100; i ++ ){
     document.write( i + "<br>" );
 }
 ~~~
