@@ -15,6 +15,8 @@ git config --list
 git config --global user.name "ceristh"
 git status
 git log
+git log -p
+git log -p -1
 git reset HEAD
 git diff
 git checkout (bracnh=rama)
