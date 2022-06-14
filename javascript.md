@@ -73,3 +73,15 @@ document.getElementById('cuerpo-tabla').innerHTML += `
 document.write('El nombre del usuario es ' + nombre);
 document.write("<br><strong>"+ n1 + " + " + n2 +" = </strong>"+ suma);
 ~~~
+## Ciclo for
+**ejemplo**  
+~~~
+for( i = 1; i <= 100; i++ ){
+    document.write( i + "<br>" );
+}
+~~~
+~~~
+for( index = 1; index <= 100; index += 1 ){
+    document.write( i + "<br>" );
+}
+~~~
